@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Polygon Di Peta</title>
+    <style type="text/css">
+      #map {
+        width: 1000px;
+        height: 800px;
+        align: center;
+      }
+    </style>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&key=AIzaSyCGwdtKtH9Tws2CDjK9ln3bsqXDbqFQT74&sensor=false&region=ID"></script>
+    <script type="text/javascript">
+      /**
+       * Called on the initial page load.
+       */
+      function init() {
+        var mapCenter = new google.maps.LatLng(-6.1409824503002755, 106.81053281211848);
+        var map = new google.maps.Map(document.getElementById('map'), {
+          'zoom': 18,
+          'center': mapCenter,
+          'mapTypeId': google.maps.MapTypeId.ROADMAP
+        });
+
+  var cluster1 = [
+    new google.maps.LatLng(-6.141579817117661, 106.80804372215266),
+    new google.maps.LatLng(-6.141569149858941, 106.8086981811523),
+    new google.maps.LatLng(-6.141622486150405, 106.81007147216792),
+    new google.maps.LatLng(-6.139158343907351, 106.81025386238093),
+    new google.maps.LatLng(-6.140011727792834, 106.80791497611995)
+  ];
+
+  var cluster2 = [
+    new google.maps.LatLng(-6.141590484376165, 106.81012511634822),
+    new google.maps.LatLng(-6.141633153408057, 106.81106925392146),
+    new google.maps.LatLng(-6.1409824503002755, 106.81210995101924),
+    new google.maps.LatLng(-6.140587761142566, 106.81151986503596),
+    new google.maps.LatLng(-6.140065064240273, 106.81118727111811),
+    new google.maps.LatLng(-6.13922234774619, 106.81120872879023),
+    new google.maps.LatLng(-6.139073005443606, 106.81053281211848),
+    new google.maps.LatLng(-6.1390943400608275, 106.81028604888911)
+  ];
+
+   var p1 = new google.maps.Polygon({
+     map: map,
+     path: cluster1,
+     strokeColor: "#FF0000",
+     strokeOpacity: 0.8,
+     strokeWeight: 2,
+     fillColor: "#FF0000",
+     fillOpacity: 0.35
+     });
+
+   var p2 = new google.maps.Polygon({
+     map: map,
+     path: cluster2,
+     strokeColor: "#00FF00",
+     strokeOpacity: 0.8,
+     strokeWeight: 2,
+     fillColor: "#00FF00",
+     fillOpacity: 0.35
+     });
+
+}
+      
+      // Register an event listener to fire when the page finishes loading.
+      google.maps.event.addDomListener(window, 'load', init);
+    </script>
+  </head>
+  <body>
+    <center><div id="map"></div></center>
+
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.kalamangga.net/" : "http://piwik.kalamangga.net/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://piwik.kalamangga.net/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+  </body>
+</html>

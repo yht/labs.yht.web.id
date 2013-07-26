@@ -1,29 +1,50 @@
 <!DOCTYPE html>
-<html lang="id" dir="ltr" itemscope itemtype="http://schema.org/Article">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="description" content="YHT's Laboratory on Information Technology">
   <meta name="keywords" content="Laboratory">
   <meta name="author" content="Yudha H Tejaningrat">
-  <meta name="generator" content="Nano Editor">
+  <meta name="generator" content="Nano Editor & GEdit">
   <title>YHT's Laboratory on Information Technology</title>
+  <link href="assets/normalize.css" rel="stylesheet" type="text/css">
+  <link href="assets/screen.css" rel="stylesheet" type="text/css">
+  <link href="assets/syntax.css" rel="stylesheet" type="text/css">
+  <link href="assets/font-awesome.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="assets/icon.png">
  </head>
  <body>
-  <h1 style='margin-bottom: 30px'>YHT's Laboratory on Information Technology</h1>
-  <h2 style='margin-top: 10px'>Google Map<h2>
-  <h3>- <a href='gmap/'>Google Map</a></h3>
-  <h3>- <a href='gmap-poly/'>Google Map with Polygon</a></h3>
+  <div class="container">
+   <header>
+    <div class="header-left"><p>&nbsp;</p></div>
+    <div class="header-right">
+     <h1>YHT's Laboratory<br />on Information Technology</h1>
+     <p class="header-tagline"></p>
+    </div>
+   </header>
+   <section id="projects">
+    <div class="section-title"><h2>Google Map</h2></div>
+    <div class="section-body">
+     <ul>
+      <li class="project">
+       <span class="project-name"><a href='google-maps/gmap.html'>Google Map</a></span>
+       <span class="project-desc">First test</span>
+      </li>
+      <li class="project">
+       <span class="project-name"><a href='google-maps/gmap-poly.html'>Google Map with Polygon</a></span>
+       <span class="project-desc">First test</span>
+      </li>
+     </ul>
+    </div>
+   </section>
+   <footer>
+    <p>Feel free to clone or fork on <a href="https://github.com/yht/labs.yht.web.id">https://github.com/yht/labs.yht.web.id</a></p>
+    <p>Licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</p>
+   </footer>
+  </div>
   <!-- Piwik --> 
-  <script type="text/javascript">
-    var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.kalamangga.net/" : "http://piwik.kalamangga.net/");
-    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-    try {
-      var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
-      piwikTracker.trackPageView();
-      piwikTracker.enableLinkTracking();
-    } catch( err ) {}
-  </script><noscript><p><img src="http://piwik.kalamangga.net/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+  <script type="text/javascript" src="assets/piwik.js"></script>
+  <noscript><p><img src="http://piwik.kalamangga.net/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
   <!-- End Piwik Tracking Code -->
  </body>
 </html>
