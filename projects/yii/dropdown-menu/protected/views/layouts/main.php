@@ -35,7 +35,7 @@
 					'label'=>'About',
 					'url'=>array('#'),
 					'items'=>array(
-						array('label'=>'About This', 'url'=>array('/site/about')),
+						array('label'=>'About This', 'url'=>array('/site/page','view'=>'about')),
 						array('label'=>'Contact', 'url'=>array('/site/contact')),
 						),
 					),
